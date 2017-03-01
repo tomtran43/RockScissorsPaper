@@ -13,6 +13,15 @@
 		19B4A4401E5D377300874A18 /* RockPaperScissor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 19B4A43E1E5D377300874A18 /* RockPaperScissor.xcdatamodeld */; };
 		19B4A4421E5D377300874A18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B4A4411E5D377300874A18 /* Assets.xcassets */; };
 		19B4A4451E5D377300874A18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B4A4431E5D377300874A18 /* LaunchScreen.storyboard */; };
+		19B4A4521E5D39CD00874A18 /* paper.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B4A44F1E5D39CD00874A18 /* paper.png */; };
+		19B4A4531E5D39CD00874A18 /* rock.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B4A4501E5D39CD00874A18 /* rock.png */; };
+		19B4A4541E5D39CD00874A18 /* scissors.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B4A4511E5D39CD00874A18 /* scissors.png */; };
+		19B4A4581E5D3AE300874A18 /* scissors1.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B4A4551E5D3AE300874A18 /* scissors1.png */; };
+		19B4A4591E5D3AE300874A18 /* rock1.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B4A4561E5D3AE300874A18 /* rock1.png */; };
+		19B4A45A1E5D3AE300874A18 /* paper1.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B4A4571E5D3AE300874A18 /* paper1.png */; };
+		19B4A45E1E5D431800874A18 /* RSPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4A45D1E5D431800874A18 /* RSPView.swift */; };
+		19B4A4601E5D7B2B00874A18 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4A45F1E5D7B2B00874A18 /* GameManager.swift */; };
+		19FCD0E81E641BDF00065498 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19FCD0E71E641BDF00065498 /* bg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +33,15 @@
 		19B4A4411E5D377300874A18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19B4A4441E5D377300874A18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19B4A4461E5D377300874A18 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B4A44F1E5D39CD00874A18 /* paper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.png; sourceTree = "<group>"; };
+		19B4A4501E5D39CD00874A18 /* rock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.png; sourceTree = "<group>"; };
+		19B4A4511E5D39CD00874A18 /* scissors.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.png; sourceTree = "<group>"; };
+		19B4A4551E5D3AE300874A18 /* scissors1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors1.png; sourceTree = "<group>"; };
+		19B4A4561E5D3AE300874A18 /* rock1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock1.png; sourceTree = "<group>"; };
+		19B4A4571E5D3AE300874A18 /* paper1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper1.png; sourceTree = "<group>"; };
+		19B4A45D1E5D431800874A18 /* RSPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSPView.swift; sourceTree = "<group>"; };
+		19B4A45F1E5D7B2B00874A18 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		19FCD0E71E641BDF00065498 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +74,11 @@
 		19B4A4361E5D377300874A18 /* RockPaperScissor */ = {
 			isa = PBXGroup;
 			children = (
+				19B4A44C1E5D377900874A18 /* Resources */,
 				19B4A4371E5D377300874A18 /* AppDelegate.swift */,
 				19B4A4391E5D377300874A18 /* ViewController.swift */,
+				19B4A45D1E5D431800874A18 /* RSPView.swift */,
+				19B4A45F1E5D7B2B00874A18 /* GameManager.swift */,
 				19B4A43B1E5D377300874A18 /* Main.storyboard */,
 				19B4A4411E5D377300874A18 /* Assets.xcassets */,
 				19B4A4431E5D377300874A18 /* LaunchScreen.storyboard */,
@@ -65,6 +86,20 @@
 				19B4A43E1E5D377300874A18 /* RockPaperScissor.xcdatamodeld */,
 			);
 			path = RockPaperScissor;
+			sourceTree = "<group>";
+		};
+		19B4A44C1E5D377900874A18 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				19FCD0E71E641BDF00065498 /* bg.jpg */,
+				19B4A4551E5D3AE300874A18 /* scissors1.png */,
+				19B4A4561E5D3AE300874A18 /* rock1.png */,
+				19B4A4571E5D3AE300874A18 /* paper1.png */,
+				19B4A44F1E5D39CD00874A18 /* paper.png */,
+				19B4A4501E5D39CD00874A18 /* rock.png */,
+				19B4A4511E5D39CD00874A18 /* scissors.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +134,7 @@
 				TargetAttributes = {
 					19B4A4331E5D377300874A18 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D6F4345AL3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -126,8 +162,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B4A4521E5D39CD00874A18 /* paper.png in Resources */,
+				19B4A4531E5D39CD00874A18 /* rock.png in Resources */,
+				19B4A4581E5D3AE300874A18 /* scissors1.png in Resources */,
+				19B4A4541E5D39CD00874A18 /* scissors.png in Resources */,
+				19B4A45A1E5D3AE300874A18 /* paper1.png in Resources */,
+				19B4A4591E5D3AE300874A18 /* rock1.png in Resources */,
 				19B4A4451E5D377300874A18 /* LaunchScreen.storyboard in Resources */,
 				19B4A4421E5D377300874A18 /* Assets.xcassets in Resources */,
+				19FCD0E81E641BDF00065498 /* bg.jpg in Resources */,
 				19B4A43D1E5D377300874A18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,6 +185,8 @@
 				19B4A43A1E5D377300874A18 /* ViewController.swift in Sources */,
 				19B4A4401E5D377300874A18 /* RockPaperScissor.xcdatamodeld in Sources */,
 				19B4A4381E5D377300874A18 /* AppDelegate.swift in Sources */,
+				19B4A45E1E5D431800874A18 /* RSPView.swift in Sources */,
+				19B4A4601E5D7B2B00874A18 /* GameManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +309,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D6F4345AL3;
 				INFOPLIST_FILE = RockPaperScissor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LocTran.RockPaperScissor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,7 +323,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D6F4345AL3;
 				INFOPLIST_FILE = RockPaperScissor/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.LocTran.RockPaperScissor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -303,6 +352,7 @@
 				19B4A44B1E5D377300874A18 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
