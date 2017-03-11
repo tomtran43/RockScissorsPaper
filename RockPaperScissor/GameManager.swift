@@ -20,6 +20,9 @@ class GameManager: NSObject {
     var delegate: UpdateScore!
     var speed = 3
     
+    var soundManager: SoundManager!
+    
+    
     
     override init(){
         self.rspViews = NSMutableArray()
@@ -121,6 +124,10 @@ class GameManager: NSObject {
                 print("win")
                 score = self.score + 1
                 delegate.updateScore(score: score)
+                
+                soundManager = SoundManager(fileName: "win")
+                soundManager.playSong()
+                
                 self.rspViews?.remove(rspView)
                 rspView.removeFromSuperview()
                 resetResult()
@@ -128,6 +135,18 @@ class GameManager: NSObject {
             }else if (rspView.nameRSP == self.drawResult){
                 
                 print("draw")
+                score = self.score - 1
+                delegate.updateScore(score: score)
+                
+                
+                if(score < 0){
+                    print("lose")
+                    delegate.endGame(result: "lose")
+                }
+                
+                soundManager = SoundManager(fileName: "draw")
+                soundManager.playSong()
+                 
                 self.rspViews?.remove(rspView)
                 rspView.removeFromSuperview()
                 resetResult()

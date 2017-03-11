@@ -25,7 +25,7 @@ class ViewController: UIViewController, UpdateScore {
     var updateSpeedTimer: Timer!
     var scoreDisplay: Int = 0
     var buttonsendtag: UIButton!
-    var audioPlayer: AVAudioPlayer!
+    var soundManager: SoundManager!
   
 
     @IBOutlet weak var scoreLabel: UILabel!
@@ -33,6 +33,9 @@ class ViewController: UIViewController, UpdateScore {
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        soundManager = SoundManager(fileName: "gameSoundtrack")
+        soundManager.playSong()
         
         addBackGround()
         addScoreZone()
@@ -150,7 +153,7 @@ class ViewController: UIViewController, UpdateScore {
             self.gameManager?.startGame()
         
             buttonsendtag.isHidden = true
-            playSong()
+
         }
     }
     
@@ -171,7 +174,7 @@ class ViewController: UIViewController, UpdateScore {
         updateSpeedTimer.invalidate()
         
         //xoa RSPView
-        var subviews = self.view.subviews
+        let subviews = self.view.subviews
         for subview in subviews as [UIView]{
             if subview is RSPView{
                 subview.removeFromSuperview()
@@ -185,15 +188,7 @@ class ViewController: UIViewController, UpdateScore {
         
     }
     
-    func playSong(){
-        
-        let filePath = Bundle.main.path(forResource: "02 Underclocked (underunderclocked mix)", ofType: ".mp3")
-        let url = NSURL(fileURLWithPath: filePath!)
-        audioPlayer = try? AVAudioPlayer(contentsOf: url as URL)
-        audioPlayer.prepareToPlay()
-        audioPlayer.play()
-        
-    }
+    
     
 }
 

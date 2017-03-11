@@ -21,7 +21,10 @@
 		19B4A45A1E5D3AE300874A18 /* paper1.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B4A4571E5D3AE300874A18 /* paper1.png */; };
 		19B4A45E1E5D431800874A18 /* RSPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4A45D1E5D431800874A18 /* RSPView.swift */; };
 		19B4A4601E5D7B2B00874A18 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4A45F1E5D7B2B00874A18 /* GameManager.swift */; };
-		19FC7F2B1E73B6F500FE4652 /* 02 Underclocked (underunderclocked mix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19FC7F2A1E73B6F500FE4652 /* 02 Underclocked (underunderclocked mix).mp3 */; };
+		19B70A771E73F0D6002BF3E3 /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B70A761E73F0D6002BF3E3 /* SoundManager.swift */; };
+		19B70A791E73F5FA002BF3E3 /* win.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19B70A781E73F5FA002BF3E3 /* win.mp3 */; };
+		19B70A7B1E7401EF002BF3E3 /* draw.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19B70A7A1E7401EF002BF3E3 /* draw.mp3 */; };
+		19FC7F2B1E73B6F500FE4652 /* gameSoundtrack.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19FC7F2A1E73B6F500FE4652 /* gameSoundtrack.mp3 */; };
 		19FCD0E81E641BDF00065498 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19FCD0E71E641BDF00065498 /* bg.jpg */; };
 /* End PBXBuildFile section */
 
@@ -42,7 +45,10 @@
 		19B4A4571E5D3AE300874A18 /* paper1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper1.png; sourceTree = "<group>"; };
 		19B4A45D1E5D431800874A18 /* RSPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSPView.swift; sourceTree = "<group>"; };
 		19B4A45F1E5D7B2B00874A18 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
-		19FC7F2A1E73B6F500FE4652 /* 02 Underclocked (underunderclocked mix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 Underclocked (underunderclocked mix).mp3"; sourceTree = "<group>"; };
+		19B70A761E73F0D6002BF3E3 /* SoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
+		19B70A781E73F5FA002BF3E3 /* win.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = win.mp3; sourceTree = "<group>"; };
+		19B70A7A1E7401EF002BF3E3 /* draw.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = draw.mp3; sourceTree = "<group>"; };
+		19FC7F2A1E73B6F500FE4652 /* gameSoundtrack.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gameSoundtrack.mp3; sourceTree = "<group>"; };
 		19FCD0E71E641BDF00065498 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +86,7 @@
 				19B4A4371E5D377300874A18 /* AppDelegate.swift */,
 				19B4A4391E5D377300874A18 /* ViewController.swift */,
 				19B4A45D1E5D431800874A18 /* RSPView.swift */,
+				19B70A761E73F0D6002BF3E3 /* SoundManager.swift */,
 				19B4A45F1E5D7B2B00874A18 /* GameManager.swift */,
 				19B4A43B1E5D377300874A18 /* Main.storyboard */,
 				19B4A4411E5D377300874A18 /* Assets.xcassets */,
@@ -93,7 +100,9 @@
 		19B4A44C1E5D377900874A18 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				19FC7F2A1E73B6F500FE4652 /* 02 Underclocked (underunderclocked mix).mp3 */,
+				19B70A7A1E7401EF002BF3E3 /* draw.mp3 */,
+				19B70A781E73F5FA002BF3E3 /* win.mp3 */,
+				19FC7F2A1E73B6F500FE4652 /* gameSoundtrack.mp3 */,
 				19FCD0E71E641BDF00065498 /* bg.jpg */,
 				19B4A4551E5D3AE300874A18 /* scissors1.png */,
 				19B4A4561E5D3AE300874A18 /* rock1.png */,
@@ -166,11 +175,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				19B4A4521E5D39CD00874A18 /* paper.png in Resources */,
+				19B70A7B1E7401EF002BF3E3 /* draw.mp3 in Resources */,
 				19B4A4531E5D39CD00874A18 /* rock.png in Resources */,
 				19B4A4581E5D3AE300874A18 /* scissors1.png in Resources */,
+				19B70A791E73F5FA002BF3E3 /* win.mp3 in Resources */,
 				19B4A4541E5D39CD00874A18 /* scissors.png in Resources */,
 				19B4A45A1E5D3AE300874A18 /* paper1.png in Resources */,
-				19FC7F2B1E73B6F500FE4652 /* 02 Underclocked (underunderclocked mix).mp3 in Resources */,
+				19FC7F2B1E73B6F500FE4652 /* gameSoundtrack.mp3 in Resources */,
 				19B4A4591E5D3AE300874A18 /* rock1.png in Resources */,
 				19B4A4451E5D377300874A18 /* LaunchScreen.storyboard in Resources */,
 				19B4A4421E5D377300874A18 /* Assets.xcassets in Resources */,
@@ -187,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19B4A43A1E5D377300874A18 /* ViewController.swift in Sources */,
+				19B70A771E73F0D6002BF3E3 /* SoundManager.swift in Sources */,
 				19B4A4401E5D377300874A18 /* RockPaperScissor.xcdatamodeld in Sources */,
 				19B4A4381E5D377300874A18 /* AppDelegate.swift in Sources */,
 				19B4A45E1E5D431800874A18 /* RSPView.swift in Sources */,
