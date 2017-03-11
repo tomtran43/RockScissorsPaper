@@ -21,6 +21,7 @@
 		19B4A45A1E5D3AE300874A18 /* paper1.png in Resources */ = {isa = PBXBuildFile; fileRef = 19B4A4571E5D3AE300874A18 /* paper1.png */; };
 		19B4A45E1E5D431800874A18 /* RSPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4A45D1E5D431800874A18 /* RSPView.swift */; };
 		19B4A4601E5D7B2B00874A18 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4A45F1E5D7B2B00874A18 /* GameManager.swift */; };
+		19FC7F2B1E73B6F500FE4652 /* 02 Underclocked (underunderclocked mix).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 19FC7F2A1E73B6F500FE4652 /* 02 Underclocked (underunderclocked mix).mp3 */; };
 		19FCD0E81E641BDF00065498 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19FCD0E71E641BDF00065498 /* bg.jpg */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		19B4A4571E5D3AE300874A18 /* paper1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper1.png; sourceTree = "<group>"; };
 		19B4A45D1E5D431800874A18 /* RSPView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSPView.swift; sourceTree = "<group>"; };
 		19B4A45F1E5D7B2B00874A18 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		19FC7F2A1E73B6F500FE4652 /* 02 Underclocked (underunderclocked mix).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "02 Underclocked (underunderclocked mix).mp3"; sourceTree = "<group>"; };
 		19FCD0E71E641BDF00065498 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -91,6 +93,7 @@
 		19B4A44C1E5D377900874A18 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				19FC7F2A1E73B6F500FE4652 /* 02 Underclocked (underunderclocked mix).mp3 */,
 				19FCD0E71E641BDF00065498 /* bg.jpg */,
 				19B4A4551E5D3AE300874A18 /* scissors1.png */,
 				19B4A4561E5D3AE300874A18 /* rock1.png */,
@@ -167,6 +170,7 @@
 				19B4A4581E5D3AE300874A18 /* scissors1.png in Resources */,
 				19B4A4541E5D39CD00874A18 /* scissors.png in Resources */,
 				19B4A45A1E5D3AE300874A18 /* paper1.png in Resources */,
+				19FC7F2B1E73B6F500FE4652 /* 02 Underclocked (underunderclocked mix).mp3 in Resources */,
 				19B4A4591E5D3AE300874A18 /* rock1.png in Resources */,
 				19B4A4451E5D377300874A18 /* LaunchScreen.storyboard in Resources */,
 				19B4A4421E5D377300874A18 /* Assets.xcassets in Resources */,

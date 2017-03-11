@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 protocol UpdateScore {
     func updateScore(score: Int)
@@ -24,6 +25,7 @@ class ViewController: UIViewController, UpdateScore {
     var updateSpeedTimer: Timer!
     var scoreDisplay: Int = 0
     var buttonsendtag: UIButton!
+    var audioPlayer: AVAudioPlayer!
   
 
     @IBOutlet weak var scoreLabel: UILabel!
@@ -148,6 +150,7 @@ class ViewController: UIViewController, UpdateScore {
             self.gameManager?.startGame()
         
             buttonsendtag.isHidden = true
+            playSong()
         }
     }
     
@@ -179,6 +182,16 @@ class ViewController: UIViewController, UpdateScore {
         if buttonsendtag.tag == 101{
             buttonsendtag.isHidden = false
         }
+        
+    }
+    
+    func playSong(){
+        
+        let filePath = Bundle.main.path(forResource: "02 Underclocked (underunderclocked mix)", ofType: ".mp3")
+        let url = NSURL(fileURLWithPath: filePath!)
+        audioPlayer = try? AVAudioPlayer(contentsOf: url as URL)
+        audioPlayer.prepareToPlay()
+        audioPlayer.play()
         
     }
     
